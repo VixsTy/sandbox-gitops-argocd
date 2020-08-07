@@ -7,6 +7,7 @@ My little repostitories to test argocd.
 ```
 # Define the GOOGLE_PROJECT and GOOGLE_APPLICATION_CREDENTIALS environment variable.
 Λ\: export GOOGLE_PROJECT=$(gcloud config get-value project)
+Λ\: gcloud iam service-accounts keys create terraform-dev.json --iam-account terraform-dev@$GOOGLE_PROJECT.iam.gserviceaccount.com
 Λ\: export GOOGLE_APPLICATION_CREDENTIALS=$PWD/terraform-dev.json
 # OPTIONAL
 Λ\: export GOOGLE_REGION=$(gcloud config get-value compute/region)
