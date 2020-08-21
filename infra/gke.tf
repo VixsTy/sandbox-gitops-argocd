@@ -10,7 +10,7 @@ resource "google_container_cluster" "primary" {
 
   addons_config {
     istio_config {
-      disabled = true
+      disabled = false
     }
   }
 
